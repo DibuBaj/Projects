@@ -1,0 +1,263 @@
+/* Student Name: Dibyanshu Ratna Bajracharya
+Student Id: 2408571  */
+
+/* Html section*/
+html {
+    height: 100%;
+}
+
+/* Body section*/
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: url(https://raw.githubusercontent.com/DibuBaj/weather-app/main/pexels-pixabay-164175.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgba(253, 244, 233, 0.848);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main section containing all the div */
+#main {
+    margin-top: 2rem;
+    width: 70rem;
+    border: 3px solid rgba(255, 229, 229, 0.292);
+    padding: 22px;
+    border-radius: 15px;
+    backdrop-filter: blur(7px);
+    background-color: rgba(110, 111, 112, 0.129);
+}
+
+/* Top section  containing date and search bar*/
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Heading section */
+.heading{
+    font-size: 40px;
+    border: 3px solid rgba(255, 229, 229, 0.292);
+    border-radius: 20px;
+    padding: 13px;
+    margin-bottom: 0px;
+}
+
+/* Hover on heading */
+.heading:hover{
+    backdrop-filter: blur(8px);
+    color: rgba(240, 248, 255, 0.968);
+    background-color: rgba(250, 235, 215, 0.182);
+    cursor: pointer;
+}
+
+/* Search Bar section*/
+#search {
+    display: flex;
+    height: 26px;
+}
+
+/* Search Input section */
+#search-input {
+    opacity: 70%;
+    margin: 0 5px;
+    border: 0;
+    border-radius: 10px;
+    padding: 3px 10px;
+    width: 10rem;
+}
+
+/* Search Button Section */
+button {
+    opacity: 70%;
+    border: 0;
+    border-radius: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+/* Hover on Search button */
+button:hover {
+    background-color: #979696;
+}
+
+/* Date section */
+.date {
+    opacity: 70%;
+    margin: 0;
+    display: inline-block;
+    font-size: 20px;
+    border: 3px solid rgba(255, 229, 229, 0.292);    border-radius: 10px;
+    width: 200px;
+    height: 24px;
+    text-align: center;
+    color:rgb(240, 248, 255) ;
+    background-color: #a7a3a36a;
+}
+
+/* Containing Bigbox and Container */
+.containers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Bigbox section containing Smallbox */
+#bigbox {
+    border: 3px solid rgba(255, 229, 229, 0.292);    width: 34rem;
+    height: 19rem;
+    margin: 58px 0 25px 0px;
+    border-radius: 15px;
+    padding: 20px 20px;
+    backdrop-filter: blur(4px);
+    position: relative;
+    transition: 0.5s ease-in-out;
+    background-color: #4b474718;
+    display: flex;
+    align-items: baseline;
+}
+
+/* Day section inside Bigbox */
+.day {
+    font-size: 50px;
+}
+
+/* Location section  inside Bigbox*/
+.location {
+    font-size: 29px;
+}
+
+/* Hover on Bigbox */
+#bigbox:hover {
+    backdrop-filter: blur(8px);
+    color: rgba(240, 248, 255, 0.925);
+    border: 3px solid rgba(153, 150, 150, 0.537);
+}
+
+/* Smallbox section */
+#smallbox {
+    border: 3px solid rgba(255, 229, 229, 0.292);    height: 15rem;
+    width: 19rem;
+    position: absolute;
+    right: 4%;
+    top: 6%;
+    margin: 1.8rem;
+    border-radius: 15px;
+    transition: 0.5s ease-in-out;
+    transition: transform 0.5s ease;
+}
+
+/* Div inside smallbox that contains information */
+#innersmallbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 23px;
+    justify-content: center;
+}
+
+/* Hover on Smallbox */
+#smallbox:hover {
+    backdrop-filter: blur(8px);
+    background-color: rgba(250, 235, 215, 0.182);
+    color: rgba(240, 248, 255, 0.925);
+    border: 2px solid rgba(153, 150, 150, 0.537);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/* Clicking on smallbox */
+#smallbox:active {
+    background-color: rgba(200, 195, 188, 0.515);
+}
+
+/* Div containing all the Box */
+.container {
+    width: 26.4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+/* Image section inside smallbox */
+.image {
+    margin: 10px 30px 10px 5px;
+}
+
+/* Temperature section  inside smallbox*/
+.temperature {
+    font-size: 48px;
+}
+
+/* Condition section  inside smallbox */
+.condition {
+    font-size: 35px;
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+
+/* All the Box with information */
+.box {
+    display: flex;
+    border: 2px solid rgba(255, 229, 229, 0.218);
+    height: 9.3rem;
+    width: 10rem;
+    margin: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(4px);
+    transition: 0.5s ease-in-out;
+    font-size: 28px;
+    align-items: flex-end;
+    justify-content: center;
+    transition: transform 0.5s ease;
+    position: relative;
+    background-color: #f8e2e216;
+}
+
+/* Hover on Box */
+.box:hover {
+    backdrop-filter: blur(8px);
+    background-color: rgba(250, 235, 215, 0.182);
+    color: rgba(240, 248, 255, 0.925);
+    border: 2px solid rgba(153, 150, 150, 0.537);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/* Click on Box */
+.box:active {
+    background-color: rgba(200, 195, 188, 0.515);
+}
+
+/* Image inside box  */
+.img {
+    position: absolute;
+    top: 18px;
+}
+
+/* Information inside box  */
+.info {
+    position: absolute;
+}
+
+/* Name of box  */
+.name {
+    position: absolute;
+    font-size: 18px;
+    bottom: 0px;
+    margin-bottom: 2px;
+}
+
+/* Footer section  */
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 7px 0px;
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.533);
+    text-align: center;
+    width: 100%;
+}
